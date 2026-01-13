@@ -9,6 +9,11 @@ api_id = 36857783
 api_hash = '9e9b351839fe7924fec7a5787c0aaf1c'
 make_webhook_url = 'https://hook.eu1.make.com/oqyga7xrva5zqn1lqim7escwxu4uv4cf'
 
+if __name__ == '__main__':
+    import asyncio
+    with client:
+        client.loop.run_until_complete(main()) 
+        
 # --- КАНАЛИ ТА НАЛАШТУВАННЯ ---
 channels = ['KD_gerls', 'teen2']
 DB_FILE = 'sent_posts.txt'  # Файл, де зберігатимуться ID постів
@@ -48,3 +53,4 @@ async def main():
                 
 
                 # Відправляємо дані
+
