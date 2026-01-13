@@ -1,6 +1,7 @@
 import time
 import requests
 import os
+import asyncio
 from telethon import TelegramClient
 
 # --- ВАШІ ДАНІ ---
@@ -45,4 +46,5 @@ async def main():
                 # Завантажуємо файл тимчасово на комп'ютер
                 path = await message.download_media()
                 
+
                 # Відправляємо дані
